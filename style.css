@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    border:0;
+    outline:0;
+    text-decoration:none;
+    list-style:none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    background: url(images/hackathon-background-image.jpg);
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    overflow-x:hidden;
+}
+
+p {
+    font-size:1.9rem;
+}
+
+h1 {
+    font-size:3.3rem;
+}
+
+.btn {
+    background: purple;
+    display: inline-block;
+    color: white;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+    transition: all 400ms ease;
+    border-radius:1rem;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.4);
+    font-size:1.3rem;
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: purple;
+}
+
+nav {
+    background: rgba(135, 4, 229, 0.1);
+    backdrop-filter: blur(10px);
+    height:5rem;
+    position:fixed;
+    z-index:10;
+    /* this means entire width of the screen */
+    width: 100vw;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.3);
+    top:0rem;
+}
+
+.nav-container {
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left:2rem;
+}
+
+.nav-menu {
+    display:flex;
+    align-items:center;
+    gap:4rem;
+    margin-right:3rem;
+}
+
+.nav-menu a {
+    font-size: .9rem;
+    transition:all 400ms ease;
+    color:white;
+}
+
+.nav-menu a:hover {
+    color: rgb(183, 100, 183);
+
+}
+
+header {
+    margin-top:13rem;
+}
+
+.header-container {
+    /* this made them side-by-side:  */
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(500px, 1fr)); 
+    /* grid-template-columns: 1fr 1fr;    */
+    align-items:center;
+    grid-gap:10rem;
+    margin: 0 auto;
+    margin-top:2rem;
+    max-width:1300px;
+    padding:2rem;
+}
+
+.header-left  {
+text-align:center;
+}
+
+.header-left a,p {
+    margin-top: 2rem;
+}
+
+.header-right img{
+   width:100%;
+}
